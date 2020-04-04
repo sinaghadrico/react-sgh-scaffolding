@@ -71,5 +71,5 @@ if (!fs.existsSync(reactFileName+DEFAULT_JS_EXTENSION)) {
         log(chalk.red('Argument "name" is required.'));
     }
 } else {
-    log(chalk.red('That file already exists, please choose another name.'));
+    log(chalk.red('That file already exists, please choose another name.!'));
 }
