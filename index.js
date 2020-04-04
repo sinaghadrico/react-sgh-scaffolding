@@ -31,7 +31,7 @@ const initScaffold = () => {
     try {
         templateOutput = reactTemplate(namePascalCase, template, templatePath, css? cssFileName:'');
     } catch (e) {
-        if (e.message.match(/\/\/ Template(.)+ was not found/)) {
+        if (e.message.match(/\/\/ Template(.)+ was not found !/)) {
             templateOutput = e.message;
         }
     }
