@@ -1,0 +1,55 @@
+{
+  "name": "react-sgh-scaffolding",
+  "version": "1.0.0",
+  "description": "start scaffolding your react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test --coverage",
+    "prepublishOnly": "npm test"
+  },
+  "author": "Sina Ghadri",
+  "license": "ISC",
+  "bin": {
+    "react-scaffolding": "./index.js",
+    "rf": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinaghadrico/react-sgh-scaffolding.git"
+  },
+  "keywords": [
+    "scaffold",
+    "scaffolding",
+    "react"
+  ],
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "child_process": "^1.0.2",
+    "clear": "^0.1.0",
+    "cli-progress": "^3.6.1",
+    "edit-json-file": "^1.4.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0",
+    "minimist": "1.2.5"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^25.2.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "jest": {
+    "verbose": true,
+    "testMatch": [
+      "**/tests/**/*.js?(x)"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  }
+}
