@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/sinaghadrico/react-sgh-scaffolding.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/sinaghadrico"
+  },
   "keywords": [
     "scaffold",
     "scaffolding",
