@@ -22,7 +22,7 @@ describe('react-sgh-cli template-react.js tests', () => {
     it('returns the "class" template with a css file import', () => {
         const templateOutput = reactTemplate('TestClass', 'class', '../templates', 'testCSSFile');
         const expectedOutput = {
-            'importCss': 'import \'./testCSSFile.css\';',
+            // 'importCss': 'import \'./testCSSFile.css\';',
             'exportClass': 'export default class TestClass extends Component',
             'renderDiv': '<div></div>',
         };
@@ -84,7 +84,7 @@ describe('react-sgh-cli template-react.js tests', () => {
         const expectedOutput = {
             'importReact': 'import React, { Component } from \'react\';',
             'importPropTypes': 'import PropTypes from \'prop-types\';',
-            'importCss': 'import \'./testCSSFile.css\';',
+            // 'importCss': 'import \'./testCSSFile.css\';',
             'defineClass': 'class TestWrapper extends Component',
             'renderDiv': '<div>\n' +
                 '                React wrapper for class TestWrapper\n' +
