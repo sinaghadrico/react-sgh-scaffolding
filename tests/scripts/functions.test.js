@@ -1,6 +1,6 @@
 const funcs = require('../../scripts/functions');
 
-describe('react-scaffolding functions.js tests', () => {
+describe('react-sgh-cli functions.js tests', () => {
     it('has a helper() function', () => {
         expect(funcs.showHelp).toBeDefined();
     });

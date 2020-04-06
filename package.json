@@ -10,8 +10,10 @@
   "author": "Sina Ghadri",
   "license": "ISC",
   "bin": {
-    "react-scaffolding": "./index.js",
+    "react-sgh-cli": "./index.js",
+    "react-sgh-cli --s": "./bin/index.js",
     "rf": "./index.js"
+
   },
   "repository": {
     "type": "git",

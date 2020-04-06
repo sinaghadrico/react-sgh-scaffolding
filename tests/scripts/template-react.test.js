@@ -1,6 +1,6 @@
 const reactTemplate = require('../../scripts/template-react');
 
-describe('react-scaffolding template-react.js tests', () => {
+describe('react-sgh-cli template-react.js tests', () => {
     it('has a default nameless function', () => {
         expect(reactTemplate()).toBeDefined();
     });

@@ -21,15 +21,15 @@ const showHelp = () => {
         'With React Scaffolding you can create different types of components '+
         'based on templates that can be customized to suit your project needs.\n' +
         '\n' +
-        'Usage: react-scaffolding [OPTIONS]...\n'+
+        'Usage: react-sgh-cli [OPTIONS]...\n'+
         '\n' +
         'IMPORTANT!:\n' +
         '  You MUST ensure that the target directories already exist and you have read and write permissions to them!\n' +
         '\n' +
         'Examples:\n' +
-        '  > react-scaffolding --name=MyContainer --path=path_to_my_folder\n' +
-        '  > react-scaffolding --name=MyContainer --path="path to my folder" --template=class\n' +
-        '  > react-scaffolding --name=CustomContainer --path=pathToMyFolder --template=customTemplate --templatePath path_to_scaffold_templates\n' +
+        '  > react-sgh-cli --name=MyContainer --path=path_to_my_folder\n' +
+        '  > react-sgh-cli --name=MyContainer --path="path to my folder" --template=class\n' +
+        '  > react-sgh-cli --name=CustomContainer --path=pathToMyFolder --template=customTemplate --templatePath path_to_scaffold_templates\n' +
         '\n' +
         'Mandatory arguments:\n' +
         '  --name            Your component name\n' +

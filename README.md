@@ -22,7 +22,7 @@ With React Scaffolding you can create the following types of React Components:
 
 ### Example
 ```bash
-$ react-scaffolding --name=my-component --path=my-folder --template=function --css my-stylesheet
+$ react-sgh-cli --name=my-component --path=my-folder --template=function --css my-stylesheet
 ```
 
 Will create the following files on the directory **my-folder** using the **function** template:
@@ -48,16 +48,16 @@ export default MyComponent;
 ### More examples
 The following command will generate a file named **MyContainer** on the directory **path_to_my_folder** using the default **class** template
 ```bash
-> react-scaffolding --name=MyContainer --path=path_to_my_folder
+> react-sgh-cli --name=MyContainer --path=path_to_my_folder
 ```
 The following command will generate a file named **MyWrapper** on the directory **path to my folder** using the template **wrapper**
 ```bash
-> react-scaffolding --name=MyWrapper --path="path to my folder" --template=wrapper
+> react-sgh-cli --name=MyWrapper --path="path to my folder" --template=wrapper
 ```
 The following command will generate a file named **CustomContainer** on the directory **pathToMyFolder** using the template **customTemplate** that is located on the directory **path_to_scaffold_templates**  
 - Please NOTE that you **MUST** ensure that the target directories already exist and you have read and write permissions to them!
 ```bash
-> react-scaffolding --name=CustomContainer --path=pathToMyFolder --template=customTemplate --templatePath path_to_scaffold_templates
+> react-sgh-cli --name=CustomContainer --path=pathToMyFolder --template=customTemplate --templatePath path_to_scaffold_templates
 ```
 
 ### Options
