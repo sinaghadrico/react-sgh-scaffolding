@@ -11,9 +11,8 @@
   "license": "ISC",
   "bin": {
     "react-sgh-cli": "./index.js",
-    "react-sgh-cli --s": "./bin/index.js",
+    "react-sgh-cli-s": "./bin/index.js",
     "rf": "./index.js"
-
   },
   "repository": {
     "type": "git",
