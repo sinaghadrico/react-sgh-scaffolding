@@ -25,6 +25,14 @@ With React Scaffolding you can create the following types of React Components:
 $ react-sgh-cli --name=my-component --path=my-folder --template=function --css my-stylesheet
 ```
 
+OR JUST 
+Run
+
+### Example-cli
+```bash
+$ react-sgh-cli-s 
+```
+
 Will create the following files on the directory **my-folder** using the **function** template:
 
 *my-component.js*

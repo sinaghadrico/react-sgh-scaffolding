@@ -1,7 +1,7 @@
 module.exports = (options) => {
     let importCss = '';
     if (options.cssFileName) {
-        importCss = `import './${options.cssFileName}.css';`;
+        importCss = `import './${options.cssFileName}.${options.cssFileType}';`;
     }
     let customClassName = '';
     if (options.reactClassName) {

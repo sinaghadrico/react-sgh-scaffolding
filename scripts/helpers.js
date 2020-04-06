@@ -25,6 +25,20 @@ const Questions = [
     },
     {
         type: 'list',
+        name: 'extension',
+        message: 'Enter your component extension : ',
+        choices: [
+            {
+                name: 'ts',
+            },
+            new inquirer.Separator(),
+            {
+                name: 'js',
+            }
+        ]
+    },
+    {
+        type: 'list',
         name: 'type',
         message: 'Enter your component type : ',
         choices: [
@@ -52,6 +66,13 @@ const Questions = [
         message: 'Enter your component route or (ignore) : '
        
     },
+    {
+        type: 'confirm',
+        name: 'css',
+        message: 'Do you need a style file ? '
+    },
+
+    
 ];
 
 

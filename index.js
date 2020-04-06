@@ -12,13 +12,15 @@ const
     template = funcs.sanitize(argv.template),
     templatePath = funcs.resolveTemplatePath(argv.templatePath, process.env.PWD),
     path = argv.path,
-    css = (argv.css && argv.css.length)? funcs.sanitize(argv.css) : argv.css;
+    css = (argv.css && argv.css.length)? funcs.sanitize(argv.css) : argv.css,
+    cssType = funcs.sanitize(argv.cssType),
+    fileType = funcs.sanitize(argv.fileType);
 const
     location = path ? `${path}` : `.`,
     reactFileName = `${location}/${name}`;
 
-const DEFAULT_JS_EXTENSION = '.js';
-const DEFAULT_CSS_EXTENSION = '.css';
+const DEFAULT_CSS_EXTENSION = (argv.cssType && argv.cssType.length)? cssType : 'scss';
+const DEFAULT_JS_EXTENSION = (argv.fileType && argv.fileType.length)? fileType : 'ts';
 
 const generate = () => {
     fs.readdir(location, () => initScaffold());
@@ -27,19 +29,20 @@ const generate = () => {
 const initScaffold = () => {
     const namePascalCase = pascalCase(name);
     const cssFileName = ((css && css.length)? css : name).toLowerCase();
+  
     let templateOutput = '';
     try {
-        templateOutput = reactTemplate(namePascalCase, template, templatePath, css? cssFileName:'');
+        templateOutput = reactTemplate(namePascalCase, template, templatePath, css? cssFileName:'',DEFAULT_CSS_EXTENSION,DEFAULT_JS_EXTENSION);
     } catch (e) {
         if (e.message.match(/\/\/ Template(.)+ was not found !/)) {
             templateOutput = e.message;
         }
     }
 
-    createFile(`${name}${DEFAULT_JS_EXTENSION}`, templateOutput);
+    createFile(`${name}.${DEFAULT_JS_EXTENSION}`, templateOutput);
 
     if (css) {
-        createFile(`${cssFileName}${DEFAULT_CSS_EXTENSION}`, `.${name} { }`);
+        createFile(`${cssFileName}.${DEFAULT_CSS_EXTENSION}`, `.${name} { }`);
     }
 };
 
@@ -64,7 +67,7 @@ if (help) {
     return;
 }
 
-if (!fs.existsSync(reactFileName+DEFAULT_JS_EXTENSION)) {
+if (!fs.existsSync(reactFileName+'.'+DEFAULT_JS_EXTENSION)) {
     if (funcs.argsValidate([name], ['string'])) {
         generate();
     } else {

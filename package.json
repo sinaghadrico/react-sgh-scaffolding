@@ -1,6 +1,6 @@
 {
   "name": "react-sgh-scaffolding",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "start scaffolding your react components",
   "main": "index.js",
   "scripts": {
