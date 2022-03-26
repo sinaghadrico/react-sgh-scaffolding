@@ -32,7 +32,7 @@
     "fs": "0.0.1-security",
     "fs-extra": "^9.0.0",
     "inquirer": "^7.1.0",
-    "minimist": "1.2.5"
+    "minimist": "1.2.6"
   },
   "devDependencies": {
     "enzyme": "^3.11.0",
